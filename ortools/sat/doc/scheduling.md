@@ -15,7 +15,7 @@ https://developers.google.com/optimization/
          * [C# code](#c-code-1)
       * [Optional intervals](#optional-intervals)
          * [Python code](#python-code-1)
-         * [C   code](#c-code-2)
+         * [C   code](#c-code-2
          * [Java code](#java-code-1)
          * [C# code](#c-code-3)
       * [NoOverlap constraint](#nooverlap-constraint)
@@ -687,7 +687,7 @@ performed intervals that precede each interval.
 
 This is slightly complicated if some interval variables are optional. To
 implement it, we will create a matrix of `precedences` boolean variables.
-`precedences[i]][j]` is set to true if and only if interval `i` is performed,
+`precedences[i][j]` is set to true if and only if interval `i` is performed,
 interval `j` is performed, and if the start of `i` is before the start of `j`.
 
 Furthermore, `precedences[i][i]` is set to be equal to `presences[i]`. This way,
